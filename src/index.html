@@ -1,77 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radiant Apparels</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant Apparels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
-<body class="text-blue-900 bg-white">
 
-  <!-- Navbar -->
-  <header class="absolute top-0 left-0 w-full z-10">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-lg font-bold text-white">Radiant Apparels</div>
-      <nav class="space-x-6 text-sm font-medium">
-        <a href="#" class="hover:text-white">About</a>
-        <a href="#" class="hover:text-white">Business Unit</a>
-        <a href="#" class="hover:text-white">Portfolio</a>
-        <a href="#" class="hover:text-white">SA 8000</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded shadow">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-white text-blue-900">
 
-  <!-- Hero Section -->
-  <section class="relative h-[80vh] bg-cover bg-center" style="background-image: url('assets/factory.jpg');">
-    <div class="absolute inset-0 bg-blue-900"></div>
-    <div class="relative z-10 flex items-center h-full max-w-7xl mx-auto px-6">
-      <div>
-        <h1 class="text-4xl font-extrabold text-white mb-4">Precision in Every Stitch</h1>
-        <p class="text-lg text-blue-100 max-w-xl">Established in 1994, Radiant Apparels is a government recognized export house, delivering high-quality woven garments to Europe, USA, and Asia Pacific regions.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-90 text-blue-900 shadow-md rounded-b-xl">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Radiant Apparels</div>
 
-  <!-- About Section -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-bold mb-4">Who We Are</h2>
-    <p class="mb-4">We specialize in woven bottom wear, babies and children’s wear. Our ISO 9001-compliant production systems and 100% online fabric inspection ensure top-tier quality.</p>
-    <p class="mb-4">With a capacity of over 5 million garments per year, we have built long-term relationships with our clients through consistency, quality, and a commitment to excellence.</p>
-  </section>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-4">
+                <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
+                <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
+                <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
+            </nav>
 
-  <!-- Business Unit -->
-  <section class="bg-blue-50 max-w-6xl mx-auto px-6 py-16">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Business Unit Overview</h2>
-      <p class="mb-4">Our business unit is focused on operational excellence, continuous improvement, and synergy. We embrace teamwork, accountability, and responsiveness as core values.</p>
-      <p>We produce garments for global brands like PETIT BATEAU, TBS, and domestic labels such as US POLO and ELLE under Arvind Lifestyle Brands.</p>
-    </div>
-  </section>
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
 
-  <!-- Portfolio -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-bold mb-4">Our Garment Portfolio</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>Babies Wear</li>
-      <li>Children’s Wear</li>
-      <li>Men’s Wear</li>
-      <li>Women’s Wear</li>
-    </ul>
-  </section>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col gap-2">
+            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
+            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
+            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">About Us</a>
+            <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
+        </div>
+    </header>
 
-  <!-- SA8000 Certification -->
-  <section class="bg-blue-50 max-w-6xl mx-auto px-6 py-16">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">SA 8000:2014 Certification</h2>
-      <p class="mb-4">We are certified for SA 8000:2014 and uphold its principles as part of our organizational culture. We value ethical partnerships and maintain a healthy work environment through documented policies.</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('assets/radiant-hero.png'); margin-top: 72px;">
+        <div class="bg-white bg-opacity-90 p-10 rounded-xl max-w-xl text-center text-blue-900 shadow-xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Precision in Every Stitch</h1>
+            <p class="text-lg mb-6">Woven garment experts exporting to Europe, USA, and Asia Pacific — over 2 million
+                pieces annually since 1994.</p>
+            <a href="#"
+                class="inline-block px-6 py-3 bg-blue-200 text-blue-900 font-semibold rounded hover:bg-blue-100">Explore
+                Our Work</a>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
-    <p class="text-sm">© 2025 Radiant Apparels. All rights reserved.</p>
-  </footer>
+    <!-- Overview Section -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">About Radiant Apparels</h2>
+        <p class="text-center max-w-3xl mx-auto text-lg leading-relaxed">
+            Established in 1994, Radiant Apparels is a Government-recognized Export House engaged in the manufacturing
+            and export of ready-made woven garments. With an annual production capacity of over 2 million pieces, we
+            serve clients across Europe, the USA, and the Asia-Pacific regions.
+        </p>
+    </section>
+    <!-- Core Strength Section -->
+    <section class="py-20 px-6 bg-blue-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Our Core Strength</h2>
 
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
+                We specialize in woven bottom wear for babies and children, consistently meeting the evolving demands of
+                global brands with a strong commitment to quality, timely delivery, and customer satisfaction. Our
+                long-standing partnerships, spanning nearly three decades, are a testament to our reliability and
+                trustworthiness in the global apparel industry.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="assets/core1.jpg" alt="Production" class="rounded-xl shadow-md object-cover h-64 w-full">
+                <img src="assets/core2.jpg" alt="Teamwork" class="rounded-xl shadow-md object-cover h-64 w-full">
+                <img src="assets/core3.jpg" alt="Quality Control" class="rounded-xl shadow-md object-cover h-64 w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Brands Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Trusted by Global Brands</h2>
+            <p class="text-lg mb-10 max-w-3xl mx-auto">
+                We are proud to manufacture garments for some of the world’s most respected brands, known for their
+                commitment to quality and style.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="assets/us-polo.png" alt="Production" class="rounded-xl shadow-md object-cover h-64 w-full">
+                <img src="assets/us-polo.png" alt="Teamwork" class="rounded-xl shadow-md object-cover h-64 w-full">
+                <img src="assets/us-polo.png" alt="Quality Control" class="rounded-xl shadow-md object-cover h-64 w-full">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+        <p>© 2025 Radiant Apparels. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
