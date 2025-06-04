@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="/src/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radiant Apparels</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/src/navbar.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -17,39 +19,7 @@
 <body class="bg-white text-blue-900">
 
     <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-90 text-blue-900 shadow-md rounded-b-xl">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="assets/radiant-logo.png" alt="logo" class="object-contain h-10 w-10" />
-                <div class="text-2xl font-bold">
-                    Radiant Apparels
-                </div>
-            </div>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex gap-4">
-                <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
-                <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
-                <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
-            </nav>
-
-            <!-- Hamburger Button -->
-            <button id="menu-toggle" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col gap-2">
-            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
-            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
-            <a href="#" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">About Us</a>
-            <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
-        </div>
-    </header>
-
+    <main-navbar></main-navbar>
     <!-- Hero Section -->
     <section class="relative h-[100vh] bg-cover bg-center flex items-center justify-center"
         style="background-image: url('assets/radiant-hero.png')">
@@ -129,22 +99,22 @@
             <div class="flex flex-wrap justify-center gap-8 text-center">
                 <div class="flex flex-col items-center w-44 md:w-48">
                     <img src="assets/GOTS.svg" alt="GOTS"
-                        class="rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
+                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
                     <span class="mt-4 text-sm md:text-base">GOTS (Global Organic Textile Standard) Certified</span>
                 </div>
                 <div class="flex flex-col items-center w-44 md:w-48">
                     <img src="assets/Organic 100 Content Standard.svg" alt="OCS"
-                        class="rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
+                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
                     <span class="mt-4 text-sm md:text-base">OCS (Organic Content Standard) Certified</span>
                 </div>
                 <div class="flex flex-col items-center w-44 md:w-48">
                     <img src="assets/OEKOTEX Standart 100-svg.svg" alt="OEKOTEX"
-                        class="rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
+                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
                     <span class="mt-4 text-sm md:text-base">OEKOTEX Certified</span>
                 </div>
                 <div class="flex flex-col items-center w-44 md:w-48">
                     <img src="assets/Higg-svg.svg" alt="HIGG"
-                        class="rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
+                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
                     <span class="mt-4 text-sm md:text-base">Audited under the HIGG Index (SLCP) framework</span>
                 </div>
             </div>
@@ -155,7 +125,6 @@
     <footer class="bg-blue-900 text-white text-center py-6">
         <p>© 2025 Radiant Apparels. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
