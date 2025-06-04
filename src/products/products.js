@@ -34,7 +34,7 @@ function applyFilters() {
     render(filtered);
 }
 
-fetch('/src/products/products.json')
+fetch('products/products.json')
     .then(res => res.json())
     .then(products => {
         allProducts = products;

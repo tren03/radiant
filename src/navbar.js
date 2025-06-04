@@ -1,6 +1,6 @@
 class MainNavbar extends HTMLElement {
     connectedCallback() {
-        fetch('/src/navbar.html')
+        fetch('navbar.html')
             .then(res => res.text())
             .then(html => {
                 this.innerHTML = html;

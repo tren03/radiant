@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radiant Apparels</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/src/navbar.js" defer></script>
+    <script src="navbar.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    <script src="products.js" defer></script>
+    <script src="products/products.js" defer></script>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -24,11 +24,11 @@
             <h2 class="text-3xl font-bold mb-10 text-center">Our Products</h2>
             <!-- Filter Controls -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <select id="brand-filter" class="w-48 border px-4 py-2 rounded shadow">
+                <select id="brand-filter" class="md:w-48 w-full border px-4 py-2 rounded shadow">
                     <option value="">All Brands</option>
                 </select>
 
-                <select id="type-filter" class="w-48 border px-4 py-2 rounded shadow">
+                <select id="type-filter" class="md:w-48 w-full border px-4 py-2 rounded shadow">
                     <option value="">All Types</option>
                 </select>
             </div>

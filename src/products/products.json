@@ -3,36 +3,36 @@
         "name": "Boys Cargo Shorts",
         "brand": "US Polo",
         "type": "Woven Bottomwear",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     },
     {
         "name": "Girls Denim Skirt",
         "brand": "Gap Kids",
         "type": "Woven Skirt",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     },
     {
         "name": "Toddler Joggers",
         "brand": "Zara Baby",
         "type": "Knitwear",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     },
     {
         "name": "Boys Cargo Shorts",
         "brand": "US Polo",
         "type": "Woven Bottomwear",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     },
     {
         "name": "Girls Denim Skirt",
         "brand": "Gap Kids",
         "type": "Woven Skirt",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     },
     {
         "name": "Toddler Joggers",
         "brand": "Zara Baby",
         "type": "Knitwear",
-        "image": "/src/assets/us-polo.png"
+        "image": "assets/us-polo.png"
     }
 ]
