@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("mobile-menu");
 
   toggle.addEventListener("click", () => {
-    console.log("hhit")
     menu.classList.toggle("hidden");
   });
 });
