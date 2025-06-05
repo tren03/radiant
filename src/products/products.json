@@ -1,38 +1,62 @@
 [
     {
-        "name": "Boys Cargo Shorts",
-        "brand": "US Polo",
+        "name": "Kids shorts",
+        "brand": "Petit Bateau",
         "type": "Woven Bottomwear",
-        "image": "assets/us-polo.png"
+        "image": "assets/products/pb-kids-shorts.jpg"
     },
     {
-        "name": "Girls Denim Skirt",
-        "brand": "Gap Kids",
+        "name": "Baby shorts",
+        "brand": "Petit Bateau",
         "type": "Woven Skirt",
-        "image": "assets/us-polo.png"
+        "image": "assets/products/pb-baby-shorts.jpg"
     },
     {
-        "name": "Toddler Joggers",
-        "brand": "Zara Baby",
-        "type": "Knitwear",
-        "image": "assets/us-polo.png"
-    },
-    {
-        "name": "Boys Cargo Shorts",
-        "brand": "US Polo",
+        "name": "Kids bermuda",
+        "brand": "Petit Bateau",
         "type": "Woven Bottomwear",
-        "image": "assets/us-polo.png"
+        "image": "assets/products/pb-kids-bermuda.jpg"
     },
     {
-        "name": "Girls Denim Skirt",
-        "brand": "Gap Kids",
-        "type": "Woven Skirt",
-        "image": "assets/us-polo.png"
+        "name": "Baby robe",
+        "brand": "Petit Bateau",
+        "type": "Woven Overall",
+        "image": "assets/products/pb-baby-robe.jpg"
     },
     {
-        "name": "Toddler Joggers",
-        "brand": "Zara Baby",
-        "type": "Knitwear",
-        "image": "assets/us-polo.png"
+        "name": "Baby robe",
+        "brand": "Petit Bateau",
+        "type": "Woven Overall",
+        "image": "assets/products/pb-baby-robe-2.jpg"
+    },
+    {
+        "name": "Kids pants",
+        "brand": "Zadig & Voltaier",
+        "type": "Woven Bottomwear",
+        "image": "assets/products/zadig-pant.jpg"
+    },
+    {
+        "name": "Kids pants",
+        "brand": "Zadig & Voltaier",
+        "type": "Woven Bottomwear",
+        "image": "assets/products/zadig-pant-2.jpg"
+    },
+    {
+        "name": "Kids pants",
+        "brand": "Zadig & Voltaier",
+        "type": "Woven Bottomwear",
+        "image": "assets/products/zadig-pant-3.jpg"
+    },
+    {
+        "name": "Kids pants",
+        "brand": "Zadig & Voltaier",
+        "type": "Woven Bottomwear",
+        "image": "assets/products/zadig-pants-4.jpg"
+    },
+    {
+        "name": "Kids bermuda",
+        "brand": "Zadig & Voltaier",
+        "type": "Woven Bottomwear",
+        "image": "assets/products/zadig-bermuda.jpg"
     }
 ]
