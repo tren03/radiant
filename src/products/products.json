@@ -1,62 +1,242 @@
 [
     {
-        "name": "Kids shorts",
+        "name": "Aigle Shorts (BROWN)",
+        "brand": "Aigle",
+        "type": "Shorts",
+        "image": "assets/products/Aigle Shorts (BROWN) .png"
+    },
+    {
+        "name": "Aigle Shorts (GREEN)",
+        "brand": "Aigle",
+        "type": "Shorts",
+        "image": "assets/products/Aigle Shorts (GREEN).png"
+    },
+    {
+        "name": "Aigle pants (GREEN)",
+        "brand": "Aigle",
+        "type": "Pants",
+        "image": "assets/products/Aigle pants (GREEN).png"
+    },
+    {
+        "name": "BB Shorts",
+        "brand": "Billie blush",
+        "type": "Shorts",
+        "image": "assets/products/BB Shorts.jpg"
+    },
+    {
+        "name": "BB Dungree",
+        "brand": "Billie blush",
+        "type": "Dungree",
+        "image": "assets/products/BB Dungree.jpg"
+    },
+    {
+        "name": "BB Dungree 2",
+        "brand": "Billie blush",
+        "type": "Dungree",
+        "image": "assets/products/BB Dungree 2.jpg"
+    },
+    {
+        "name": "C_B Babies pant",
+        "brand": "Carrement Beau",
+        "type": "Pant",
+        "image": "assets/products/C_B Babies pant.png"
+    },
+    {
+        "name": "C_B Babies robe",
+        "brand": "Carrement Beau",
+        "type": "Robe",
+        "image": "assets/products/C_B Babies robe .png"
+    },
+    {
+        "name": "C_B Chemise",
+        "brand": "Carrement Beau",
+        "type": "Shirt",
+        "image": "assets/products/C_B Chemise.png"
+    },
+    {
+        "name": "C_B Combinaison Longue",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "assets/products/C_B Combinaison Longue.png"
+    },
+    {
+        "name": "C_B Dress",
+        "brand": "Carrement Beau",
+        "type": "Dress",
+        "image": "assets/products/C_B Dress.png"
+    },
+    {
+        "name": "C_B Dungree",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "assets/products/C_B Dungree.png"
+    },
+    {
+        "name": "C_B Dungree 2",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "assets/products/C_B Dungree 2.png"
+    },
+    {
+        "name": "C_B pant",
+        "brand": "Carrement Beau",
+        "type": "Pants",
+        "image": "assets/products/C_B pant.png"
+    },
+    {
+        "name": "C_B Shirt",
+        "brand": "Carrement Beau",
+        "type": "Shirt",
+        "image": "assets/products/C_B Shirt.png"
+    },
+    {
+        "name": "CB short",
+        "brand": "Carrement Beau",
+        "type": "Shorts",
+        "image": "assets/products/CB short.png"
+    },
+    {
+        "name": "CDS Shorts",
+        "brand": "CDS",
+        "type": "Shorts",
+        "image": "assets/products/CDS Shorts .png"
+    },
+    {
+        "name": "MK Dress",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "assets/products/MK Dress.jpg"
+    },
+    {
+        "name": "MK Dress 2",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "assets/products/MK Dress 2.jpg"
+    },
+    {
+        "name": "MK Dress",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "assets/products/MK Dress.png"
+    },
+    {
+        "name": "MK Shirt",
+        "brand": "Micheal Kors",
+        "type": "Shirt",
+        "image": "assets/products/MK Shirt .jpg"
+    },
+    {
+        "name": "MK Shorts",
+        "brand": "Micheal Kors",
+        "type": "Shorts",
+        "image": "assets/products/MK Shirts.jpg"
+    },
+    {
+        "name": "MK Shorts",
+        "brand": "Micheal Kors",
+        "type": "Shorts",
+        "image": "assets/products/MK Shorts.png"
+    },
+    {
+        "name": "PB Dess",
         "brand": "Petit Bateau",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/pb-kids-shorts.jpg"
+        "type": "Dress",
+        "image": "assets/products/PB Dess.jpg"
     },
     {
-        "name": "Baby shorts",
+        "name": "PB Dress 2",
         "brand": "Petit Bateau",
-        "type": "Woven Skirt",
-        "image": "assets/products/pb-baby-shorts.jpg"
+        "type": "Dress",
+        "image": "assets/products/PB Dress 2.png"
     },
     {
-        "name": "Kids bermuda",
+        "name": "PB Dungree",
         "brand": "Petit Bateau",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/pb-kids-bermuda.jpg"
+        "type": "Dungree",
+        "image": "assets/products/PB Dungree.jpg"
     },
     {
-        "name": "Baby robe",
+        "name": "PB Dungree 2",
         "brand": "Petit Bateau",
-        "type": "Woven Overall",
-        "image": "assets/products/pb-baby-robe.jpg"
+        "type": "Dungree",
+        "image": "assets/products/PB Dungree 2.jpg"
     },
     {
-        "name": "Baby robe",
+        "name": "PB pant",
         "brand": "Petit Bateau",
-        "type": "Woven Overall",
-        "image": "assets/products/pb-baby-robe-2.jpg"
+        "type": "Pants",
+        "image": "assets/products/PB pant .png"
     },
     {
-        "name": "Kids pants",
-        "brand": "Zadig & Voltaier",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/zadig-pant.jpg"
+        "name": "PB Shorts",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "assets/products/PB Shorts.jpg"
     },
     {
-        "name": "Kids pants",
-        "brand": "Zadig & Voltaier",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/zadig-pant-2.jpg"
+        "name": "PB Shorts",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "assets/products/PB Shorts.png"
     },
     {
-        "name": "Kids pants",
-        "brand": "Zadig & Voltaier",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/zadig-pant-3.jpg"
+        "name": "PB Shorts 2",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "assets/products/PB Shorts 2.jpg"
     },
     {
-        "name": "Kids pants",
-        "brand": "Zadig & Voltaier",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/zadig-pants-4.jpg"
+        "name": "PB Shorts 3",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "assets/products/PB Shorts 3.jpg"
     },
     {
-        "name": "Kids bermuda",
-        "brand": "Zadig & Voltaier",
-        "type": "Woven Bottomwear",
-        "image": "assets/products/zadig-bermuda.jpg"
+        "name": "Z_V Pant",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "assets/products/Z_V Pant.jpg"
+    },
+    {
+        "name": "Z_V Pant",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "assets/products/Z_V Pant .png"
+    },
+    {
+        "name": "Z_V Pant 2",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "assets/products/Z_V Pant 2.jpg"
+    },
+    {
+        "name": "Z_V Pant 3",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "assets/products/Z_V Pant 3.jpg"
+    },
+    {
+        "name": "Z_V Pants 2",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "assets/products/Z_V Pants 2.jpg"
+    },
+    {
+        "name": "Z_V Shorts",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "assets/products/Z_V Shorts .jpg"
+    },
+    {
+        "name": "Z_V Shorts",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "assets/products/Z_V Shorts.png"
+    },
+    {
+        "name": "Z_V  Shorts",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "assets/products/Z_V  Shorts.png"
     }
 ]
