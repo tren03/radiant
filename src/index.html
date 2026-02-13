@@ -4,127 +4,335 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radiant Apparels</title>
+    <title>Radiant Apparels | Precision in Every Stitch</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link href="./output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <script src="navbar.js" defer></script>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
 </head>
 
-<body class="bg-white text-blue-900">
-
-    <!-- Navbar -->
+<body>
+    <div class="grain-overlay"></div>
+    
     <main-navbar></main-navbar>
-    <!-- Hero Section -->
-    <section class="relative h-[100vh] bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('assets/radiant-hero.png')">
-        <div class="bg-white bg-opacity-90 p-10 rounded-xl w-10/12 md:max-w-xl text-center text-blue-900 shadow-xl">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Precision in Every Stitch</h1>
-            <p class="text-lg mb-6">Woven garment experts exporting to Europe, USA, and Asia Pacific — over 2 million
-                pieces annually since 1994.</p>
-            <a href="products.html"
-                class="inline-block px-6 py-3 bg-blue-200 text-blue-900 font-semibold rounded hover:bg-blue-100">Explore
-                Our Work</a>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[var(--soft-white)] via-[var(--light-blue)]/30 to-[var(--warm-white)]"></div>
+        
+        <div class="organic-blob blob-1" style="top: 10%; right: -5%;"></div>
+        <div class="organic-blob blob-2" style="bottom: 20%; left: -10%;"></div>
+        <div class="organic-blob blob-3" style="top: 50%; right: 30%;"></div>
+        
+        <div class="absolute inset-0 woven-pattern"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32 lg:py-40">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="hero-content">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/60 backdrop-blur-sm border border-[var(--light-blue)] mb-4 md:mb-6">
+                        <span class="w-2 h-2 rounded-full bg-[var(--ocean-blue)] animate-pulse-slow"></span>
+                        <span class="text-xs md:text-sm text-[var(--deep-navy)] font-medium">Government Recognized Export House</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Precision in<br>
+                        <span class="text-gradient">Every Stitch</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle max-w-lg mb-6 md:mb-8">
+                        Woven garment experts exporting to Europe, USA, and Asia Pacific. 
+                        Over 2 million pieces annually since 1994 — crafted with care, delivered with excellence.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 md:gap-4">
+                        <a href="products.html" class="btn-primary text-sm md:text-base">Explore Our Work</a>
+                        <a href="contact.html" class="btn-secondary text-sm md:text-base">Start a Partnership</a>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 md:mt-12 pt-6 md:pt-8 border-t border-[var(--light-blue)]">
+                        <div class="text-center">
+                            <div class="stat-number text-2xl md:text-3xl lg:text-4xl">2M+</div>
+                            <div class="text-xs md:text-sm text-[var(--sky-blue)]">Pieces Annually</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="stat-number text-2xl md:text-3xl lg:text-4xl">30+</div>
+                            <div class="text-xs md:text-sm text-[var(--sky-blue)]">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="stat-number text-2xl md:text-3xl lg:text-4xl">3</div>
+                            <div class="text-xs md:text-sm text-[var(--sky-blue)]">Production Units</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative opacity-0-init animate-scale-in order-first lg:order-last" style="animation-delay: 0.5s;">
+                    <div class="absolute -inset-4 bg-gradient-to-br from-[var(--sky-blue)]/20 to-[var(--ocean-blue)]/20 rounded-[40px] blur-2xl"></div>
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz5CwAoDOcpA6NDW1t2RYiuvhc4H3xzPOjJeFXf" alt="Radiant Apparels" class="relative rounded-[24px] md:rounded-[32px] shadow-2xl w-full h-64 md:h-80 lg:h-96 object-cover" />
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Overview Section -->
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-center">About Radiant Apparels</h2>
-        <p class="text-center max-w-3xl mx-auto text-lg leading-relaxed">
-            Established in 1994, Radiant Apparels is a Government-recognized Export House engaged in the manufacturing
-            and export of ready-made woven garments. With an annual production capacity of over 2 million pieces, we
-            serve clients across Europe, the USA, and the Asia-Pacific regions.
-        </p>
-    </section>
-    <!-- Core Strength Section -->
-    <section class="py-20 px-6 bg-blue-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 text-center">Our Core Strength</h2>
+    <div class="scroll-indicator" id="hero-scroll">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+    </div>
 
-            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
+    <section class="section-padding bg-white relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="section-title">About Radiant Apparels</h2>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="opacity-0-init animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <p class="text-lg leading-relaxed text-[var(--deep-navy)]/80 mb-6">
+                        Established in 1994, Radiant Apparels is a Government-recognized Export House engaged in the manufacturing 
+                        and export of ready-made woven garments. With an annual production capacity of over 2 million pieces, we 
+                        serve clients across Europe, the USA, and the Asia-Pacific regions.
+                    </p>
+                    <p class="text-lg leading-relaxed text-[var(--deep-navy)]/80">
+                        Our commitment to quality, sustainability, and ethical manufacturing has made us a trusted partner for 
+                        global brands seeking excellence in children's woven bottom wear.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-3 md:gap-4 opacity-0-init animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="organic-card p-4 md:p-6 text-center">
+                        <div class="stat-number text-2xl md:text-3xl">1994</div>
+                        <div class="text-xs md:text-sm text-[var(--sky-blue)] mt-2">Established</div>
+                    </div>
+                    <div class="organic-card p-4 md:p-6 text-center">
+                        <div class="stat-number text-2xl md:text-3xl">200+</div>
+                        <div class="text-xs md:text-sm text-[var(--sky-blue)] mt-2">Skilled Workers</div>
+                    </div>
+                    <div class="organic-card p-4 md:p-6 text-center">
+                        <div class="stat-number text-2xl md:text-3xl">3</div>
+                        <div class="text-xs md:text-sm text-[var(--sky-blue)] mt-2">Countries Served</div>
+                    </div>
+                    <div class="organic-card p-4 md:p-6 text-center">
+                        <div class="stat-number text-2xl md:text-3xl">100%</div>
+                        <div class="text-xs md:text-sm text-[var(--sky-blue)] mt-2">Export Focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding relative overflow-hidden" style="background: var(--light-blue);">
+        <div class="organic-blob blob-1" style="top: -10%; right: 10%; opacity: 0.08;"></div>
+        <div class="absolute inset-0 woven-pattern"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Our Core Strength</h2>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12 text-[var(--deep-navy)]/80">
                 We specialize in woven bottom wear for babies and children, consistently meeting the evolving demands of
                 global brands with a strong commitment to quality, timely delivery, and customer satisfaction. Our
                 long-standing partnerships, spanning nearly three decades, are a testament to our reliability and
                 trustworthiness in the global apparel industry.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-6">
-                <img src="assets/us-polo.png" alt="Production"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
-                <img src="assets/us-polo.png" alt="Teamwork"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
-                <img src="assets/us-polo.png" alt="Quality Control"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="organic-card p-5 md:p-8 text-center opacity-0-init animate-fade-in-up stagger-1">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[var(--light-blue)] to-[var(--muted-blue)] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-[var(--ocean-blue)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">Premium Quality</h3>
+                    <p class="text-sm text-[var(--deep-navy)]/70">Rigorous quality control at every stage of production</p>
+                </div>
+                
+                <div class="organic-card p-5 md:p-8 text-center opacity-0-init animate-fade-in-up stagger-2">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[var(--light-blue)] to-[var(--muted-blue)] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-[var(--ocean-blue)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">On-Time Delivery</h3>
+                    <p class="text-sm text-[var(--deep-navy)]/70">Meeting deadlines with precision and reliability</p>
+                </div>
+                
+                <div class="organic-card p-5 md:p-8 text-center opacity-0-init animate-fade-in-up stagger-3">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[var(--light-blue)] to-[var(--muted-blue)] flex items-center justify-center">
+                        <svg class="w-8 h-8 text-[var(--ocean-blue)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">Trusted Partnerships</h3>
+                    <p class="text-sm text-[var(--deep-navy)]/70">Nearly 30 years of lasting client relationships</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trusted Brands Section -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Trusted by Global Brands</h2>
-            <p class="text-lg mb-10 max-w-3xl mx-auto">
-                We are proud to manufacture garments for some of the world's most respected brands, known for their
-                commitment to quality and style.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-6">
-                <img src="assets/zadig-model.png" alt="Production"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
-                <img src="assets/hugo-model.png" alt="Teamwork"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
-                <img src="assets/micheal-kors-model.png" alt="Quality Control"
-                    class="rounded-xl shadow-md object-contain h-32 w-32 md:h-64 md:w-64">
-            </div>
-        </div>
-    </section>
-
-    <!-- New certificate section -->
-    <section class="py-20 px-6 bg-blue-50">
+    <section class="section-padding bg-white relative">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 text-center">Certifications and Social commitment</h2>
-
-            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
-                We are committed to social and environmental responsibility. Our operations follow global
-                sustainability standards, and we partner only with like-minded organizations. We believe social
-                awareness is essential for lasting growth.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-8 text-center">
-                <div class="flex flex-col items-center w-44 md:w-48">
-                    <img src="assets/GOTS.svg" alt="GOTS"
-                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
-                    <span class="mt-4 text-sm md:text-base">GOTS (Global Organic Textile Standard) Certified</span>
+            <div class="text-center mb-16">
+                <h2 class="section-title">Trusted by Global Brands</h2>
+                <div class="decorative-line"></div>
+                <p class="text-lg text-[var(--deep-navy)]/70 max-w-2xl mx-auto mt-6">
+                    We are proud to manufacture garments for some of the world's most respected brands, 
+                    known for their commitment to quality and style.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="organic-card p-6 opacity-0-init animate-fade-in-up stagger-1">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--light-blue)] to-white p-8">
+                        <img src="https://utfs.io/f/Uc3Q7lILsSz5QS5h9taoAfyDPbKuzX8dYcGRnM1tW0kI9LwE" alt="Zadig & Voltaire" class="w-full h-48 object-contain mx-auto" />
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-center" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">Zadig & Voltaire</h3>
                 </div>
-                <div class="flex flex-col items-center w-44 md:w-48">
-                    <img src="assets/Organic 100 Content Standard.svg" alt="OCS"
-                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
-                    <span class="mt-4 text-sm md:text-base">OCS (Organic Content Standard) Certified</span>
+                
+                <div class="organic-card p-6 opacity-0-init animate-fade-in-up stagger-2">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--light-blue)] to-white p-8">
+                        <img src="https://utfs.io/f/Uc3Q7lILsSz5SBa71rggciF78jKRn9Mtlv2D3ksqHeTAPBWJ" alt="Hugo Boss" class="w-full h-48 object-contain mx-auto" />
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-center" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">Hugo Boss</h3>
                 </div>
-                <div class="flex flex-col items-center w-44 md:w-48">
-                    <img src="assets/OEKOTEX Standart 100-svg.svg" alt="OEKOTEX"
-                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
-                    <span class="mt-4 text-sm md:text-base">OEKOTEX Certified</span>
-                </div>
-                <div class="flex flex-col items-center w-44 md:w-48">
-                    <img src="assets/Higg-svg.svg" alt="HIGG"
-                        class="bg-white rounded-xl shadow-md object-contain h-32 w-32 md:h-44 md:w-44">
-                    <span class="mt-4 text-sm md:text-base">Audited under the HIGG Index (SLCP) framework</span>
+                
+                <div class="organic-card p-6 opacity-0-init animate-fade-in-up stagger-3">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--light-blue)] to-white p-8">
+                        <img src="https://utfs.io/f/Uc3Q7lILsSz5W8BGqDpe5JfiMGz84dQo0HkESVwDC7KaLtpI" alt="Michael Kors" class="w-full h-48 object-contain mx-auto" />
+                    </div>
+                    <h3 class="text-lg font-semibold mt-4 text-center" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">Michael Kors</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white text-center py-6">
-        <p>© 2025 Radiant Apparels. All rights reserved.</p>
+    <section class="section-padding relative overflow-hidden" style="background: var(--light-blue);">
+        <div class="organic-blob blob-2" style="bottom: -5%; left: 5%; opacity: 0.08;"></div>
+        <div class="absolute inset-0 woven-pattern"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Certifications & Social Commitment</h2>
+                <div class="decorative-line"></div>
+                <p class="text-lg text-[var(--deep-navy)]/70 max-w-3xl mx-auto mt-6">
+                    We are committed to social and environmental responsibility. Our operations follow global
+                    sustainability standards, and we partner only with like-minded organizations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="certification-badge text-center opacity-0-init animate-scale-in stagger-1">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz5OeJ5QEXqWR8XsTd2StwvauFxeHm1nGgP0A9p" alt="GOTS" class="w-20 h-20 mx-auto object-contain" />
+                    <span class="block mt-3 text-sm font-medium text-[var(--deep-navy)]">GOTS Certified</span>
+                    <span class="block text-xs text-[var(--sky-blue)]">Global Organic Textile Standard</span>
+                </div>
+                
+                <div class="certification-badge text-center opacity-0-init animate-scale-in stagger-2">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz55I14UD0bEyimN0wCSVRUpoqvMHYu8WkJ7ft4" alt="OCS" class="w-20 h-20 mx-auto object-contain" />
+                    <span class="block mt-3 text-sm font-medium text-[var(--deep-navy)]">OCS Certified</span>
+                    <span class="block text-xs text-[var(--sky-blue)]">Organic Content Standard</span>
+                </div>
+                
+                <div class="certification-badge text-center opacity-0-init animate-scale-in stagger-3">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz55Hu8n70bEyimN0wCSVRUpoqvMHYu8WkJ7ft4" alt="OEKOTEX" class="w-20 h-20 mx-auto object-contain" />
+                    <span class="block mt-3 text-sm font-medium text-[var(--deep-navy)]">OEKO-TEX</span>
+                    <span class="block text-xs text-[var(--sky-blue)]">Standard 100 Certified</span>
+                </div>
+                
+                <div class="certification-badge text-center opacity-0-init animate-scale-in stagger-4">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz5zlPPEbSL041bluE6zwUBfkg9AmjVqTXF5vQP" alt="HIGG" class="w-20 h-20 mx-auto object-contain" />
+                    <span class="block mt-3 text-sm font-medium text-[var(--deep-navy)]">HIGG Index</span>
+                    <span class="block text-xs text-[var(--sky-blue)]">SLCP Framework Audited</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="section-title">Ready to Partner with Us?</h2>
+            <p class="text-lg text-[var(--deep-navy)]/70 mb-8">
+                Whether you're looking for a manufacturing partner for your brand or want to learn more about our capabilities, we'd love to hear from you.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="btn-primary">Get in Touch</a>
+                <a href="infra.html" class="btn-secondary">View Our Facilities</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz5TzBrFeugRj7zMKGrDqXswBUbnLc6xomdfE1V" alt="Radiant Logo" class="h-10 w-10 object-contain brightness-0 invert" />
+                    <span class="text-lg font-semibold" style="font-family: 'Cormorant Garamond', serif;">Radiant Apparels</span>
+                </div>
+                
+                <div class="flex gap-6 text-sm text-white/70">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="products.html" class="hover:text-white transition-colors">Products</a>
+                    <a href="infra.html" class="hover:text-white transition-colors">Infrastructure</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/50">
+                <p>© 2025 Radiant Apparels Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const header = document.getElementById('main-header');
+        const scrollIndicator = document.getElementById('hero-scroll');
+        const heroSection = document.querySelector('section');
+        
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    scrollIndicator.classList.remove('hidden');
+                } else {
+                    scrollIndicator.classList.add('hidden');
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        heroObserver.observe(heroSection);
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+        
+        scrollIndicator.addEventListener('click', () => {
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+        });
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.opacity-0-init').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>

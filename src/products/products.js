@@ -1,23 +1,290 @@
+const PRODUCTS_DATA = [
+    {
+        "name": "Aigle Shorts (BROWN)",
+        "brand": "Aigle",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz57Si8yAnMesduXyi6SKaH30hEIAj2PnoUFZTB"
+    },
+    {
+        "name": "Aigle Shorts (GREEN)",
+        "brand": "Aigle",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5aqKD59CjG93wUqsO4KxhprHdyNE62WAPn8CJ"
+    },
+    {
+        "name": "Aigle pants (GREEN)",
+        "brand": "Aigle",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5D06lDeOQVTNEev5nAMLOhCmqUWYkBPsFoizw"
+    },
+    {
+        "name": "BB Shorts",
+        "brand": "Billie blush",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5QrjBZZaoAfyDPbKuzX8dYcGRnM1tW0kI9LwE"
+    },
+    {
+        "name": "BB Dungree",
+        "brand": "Billie blush",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz56yuSySTFFjIu94ligU0WSn5NXfVdkcYmQvBa"
+    },
+    {
+        "name": "BB Dungree 2",
+        "brand": "Billie blush",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5sMMpbObh0Omior8zYVWZdgxHBhpn5cEIF9ly"
+    },
+    {
+        "name": "C_B Babies pant",
+        "brand": "Carrement Beau",
+        "type": "Pant",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5Qjzlz0aoAfyDPbKuzX8dYcGRnM1tW0kI9LwE"
+    },
+    {
+        "name": "C_B Babies robe",
+        "brand": "Carrement Beau",
+        "type": "Robe",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz54uMGEtlHR1jgqPKtENzTV0FldLpkmQyChM3B"
+    },
+    {
+        "name": "C_B Chemise",
+        "brand": "Carrement Beau",
+        "type": "Shirt",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5O55K25XqWR8XsTd2StwvauFxeHm1nGgP0A9p"
+    },
+    {
+        "name": "C_B Combinaison Longue",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5sk3SDNh0Omior8zYVWZdgxHBhpn5cEIF9ly4"
+    },
+    {
+        "name": "C_B Dress",
+        "brand": "Carrement Beau",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5wsJURdN3z5s6gkXlLZ1hSBP7QoEeRA0NwMmb"
+    },
+    {
+        "name": "C_B Dungree",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5e3Tu4hfPjToEGBsiRUwHzK76tk1fWJ0VLbpQ"
+    },
+    {
+        "name": "C_B Dungree 2",
+        "brand": "Carrement Beau",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5E3iw79sutLRYaNOA7ogpbiydlsmGPj3UBnS6"
+    },
+    {
+        "name": "C_B pant",
+        "brand": "Carrement Beau",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz59cMvfjyMatSkshY0wPI7gvVmcixeDbf3Jzy4"
+    },
+    {
+        "name": "C_B Shirt",
+        "brand": "Carrement Beau",
+        "type": "Shirt",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5DabmTPOQVTNEev5nAMLOhCmqUWYkBPsFoizw"
+    },
+    {
+        "name": "CB short",
+        "brand": "Carrement Beau",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5EMAwBQsutLRYaNOA7ogpbiydlsmGPj3UBnS6"
+    },
+    {
+        "name": "CDS Shorts",
+        "brand": "CDS",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5y4WSdI5Rv0EJfjoH8TdQpWhwaNZC5rnAqbOg"
+    },
+    {
+        "name": "MK Dress",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz56uZteAFFjIu94ligU0WSn5NXfVdkcYmQvBaL"
+    },
+    {
+        "name": "MK Dress 2",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5f85WlpTTUiGKSDQ7pIk2R4m0nsBVoHraEgxu"
+    },
+    {
+        "name": "MK Dress (PNG)",
+        "brand": "Micheal Kors",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz55fVUhzu0bEyimN0wCSVRUpoqvMHYu8WkJ7ft"
+    },
+    {
+        "name": "MK Shirt",
+        "brand": "Micheal Kors",
+        "type": "Shirt",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5vP32Jn3wBfynidAJY8Is3mro0XlUw971g5kz"
+    },
+    {
+        "name": "MK Shorts",
+        "brand": "Micheal Kors",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5GDd4q9APl03Xy5Y7i4tOHjkfwgAD6QRmLJzF"
+    },
+    {
+        "name": "MK Shorts (PNG)",
+        "brand": "Micheal Kors",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5JWIpsq4x40ZKlmYdwvjeHVn3c5pzFA9MWU7i"
+    },
+    {
+        "name": "PB Dess",
+        "brand": "Petit Bateau",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5N8DfU3PRUApsFjy4PCQXrou9EWMcYamhLiTN"
+    },
+    {
+        "name": "PB Dress 2",
+        "brand": "Petit Bateau",
+        "type": "Dress",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5mCwMwkWQXTZnjixNW89qrdhvbDcmyo71BFeG"
+    },
+    {
+        "name": "PB Dungree",
+        "brand": "Petit Bateau",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5Qc3hh1JaoAfyDPbKuzX8dYcGRnM1tW0kI9Lw"
+    },
+    {
+        "name": "PB Dungree 2",
+        "brand": "Petit Bateau",
+        "type": "Dungree",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5Nndh8BbPRUApsFjy4PCQXrou9EWMcYamhLiT"
+    },
+    {
+        "name": "PB pant",
+        "brand": "Petit Bateau",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz56uBaJiFFjIu94ligU0WSn5NXfVdkcYmQvBaL"
+    },
+    {
+        "name": "PB Shorts",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5m8Fc3oQXTZnjixNW89qrdhvbDcmyo71BFeG0"
+    },
+    {
+        "name": "PB Shorts (PNG)",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5QM78KVaoAfyDPbKuzX8dYcGRnM1tW0kI9LwE"
+    },
+    {
+        "name": "PB Shorts 2",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz54iX04clHR1jgqPKtENzTV0FldLpkmQyChM3B"
+    },
+    {
+        "name": "PB Shorts 3",
+        "brand": "Petit Bateau",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz501ysZMekCw8FOJoi3YslNEKqu71ghQrecPja"
+    },
+    {
+        "name": "Z_V Pant",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5etusa1fPjToEGBsiRUwHzK76tk1fWJ0VLbpQ"
+    },
+    {
+        "name": "Z_V Pant (PNG)",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5sIlCgMh0Omior8zYVWZdgxHBhpn5cEIF9ly4"
+    },
+    {
+        "name": "Z_V Pant 2",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5OsonyiXqWR8XsTd2StwvauFxeHm1nGgP0A9p"
+    },
+    {
+        "name": "Z_V Pant 3",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5wOHIbAN3z5s6gkXlLZ1hSBP7QoEeRA0NwMmb"
+    },
+    {
+        "name": "Z_V Pants 2",
+        "brand": "Zadig & Voltaire",
+        "type": "Pants",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5DnTtadOQVTNEev5nAMLOhCmqUWYkBPsFoizw"
+    },
+    {
+        "name": "Z_V Shorts",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5VlPtfHzzrbtB9mvYFCgZIWk0hle8McAfNXHD"
+    },
+    {
+        "name": "Z_V Shorts (PNG)",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5fpw7qaTTUiGKSDQ7pIk2R4m0nsBVoHraEgxu"
+    },
+    {
+        "name": "Z_V Shorts (Alt)",
+        "brand": "Zadig & Voltaire",
+        "type": "Shorts",
+        "image": "https://utfs.io/f/Uc3Q7lILsSz5Ar2I3lcku81iL4QwmU6JyBFvXlRp3GZ02VEW"
+    }
+];
+
 let allProducts = [];
 
 const brandFilter = document.getElementById('brand-filter');
 const typeFilter = document.getElementById('type-filter');
 const grid = document.getElementById('product-grid');
+const noResults = document.getElementById('no-results');
 
-// ✅ Extracted render function
 function render(products) {
-    grid.innerHTML = ''; // clear existing items
+    grid.innerHTML = '';
 
-    products.forEach(product => {
+    if (products.length === 0) {
+        noResults.classList.remove('hidden');
+        return;
+    }
+    
+    noResults.classList.add('hidden');
+
+    products.forEach((product, index) => {
         const card = document.createElement('div');
-        card.className = 'bg-blue-50 rounded-xl shadow p-6 flex flex-col items-center text-center';
+        card.className = 'product-card opacity-0-init animate-scale-in';
+        card.style.animationDelay = `${Math.min(index * 0.1, 0.8)}s`;
+        card.style.animationPlayState = 'paused';
+        
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" class="rounded-xl h-64 w-64 object-contain mb-4">
-            <h3 class="text-xl font-semibold">${product.name}</h3>
-            <p class="text-sm text-blue-700">Brand: ${product.brand}</p>
-            <p class="text-sm text-blue-700">Type: ${product.type}</p>
+            <div class="product-card-image p-8">
+                <img src="${product.image}" alt="${product.name}" class="w-full h-56 object-contain mx-auto relative z-10">
+            </div>
+            <div class="p-6 text-center">
+                <h3 class="text-lg font-semibold mb-2" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">${product.name}</h3>
+                <div class="flex justify-center gap-4 text-sm">
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[var(--light-blue)] text-[var(--deep-navy)]/80">
+                        ${product.brand}
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[var(--warm-white)] text-[var(--deep-navy)]/80">
+                        ${product.type}
+                    </span>
+                </div>
+            </div>
         `;
         grid.appendChild(card);
+        
+        setTimeout(() => {
+            card.style.animationPlayState = 'running';
+        }, 50);
     });
 }
 
@@ -34,31 +301,28 @@ function applyFilters() {
     render(filtered);
 }
 
-fetch('products/products.json')
-    .then(res => res.json())
-    .then(products => {
-        allProducts = products;
+function initProducts() {
+    allProducts = PRODUCTS_DATA;
 
-        // Populate dropdowns
-        const brands = [...new Set(products.map(p => p.brand))];
-        const types = [...new Set(products.map(p => p.type))];
+    const brands = [...new Set(allProducts.map(p => p.brand))];
+    const types = [...new Set(allProducts.map(p => p.type))];
 
-        brands.forEach(b => {
-            const opt = document.createElement('option');
-            opt.value = opt.textContent = b;
-            brandFilter.appendChild(opt);
-        });
-
-        types.forEach(t => {
-            const opt = document.createElement('option');
-            opt.value = opt.textContent = t;
-            typeFilter.appendChild(opt);
-        });
-
-        // Initial render
-        render(allProducts);
+    brands.forEach(b => {
+        const opt = document.createElement('option');
+        opt.value = opt.textContent = b;
+        brandFilter.appendChild(opt);
     });
 
-// ✅ Add listeners
+    types.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = opt.textContent = t;
+        typeFilter.appendChild(opt);
+    });
+
+    render(allProducts);
+}
+
 brandFilter.addEventListener('change', applyFilters);
 typeFilter.addEventListener('change', applyFilters);
+
+initProducts();

@@ -4,41 +4,114 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radiant Apparels</title>
+    <title>Products | Radiant Apparels</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link href="./output.css" rel="stylesheet">
     <script src="navbar.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <script src="products/products.js" defer></script>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
 </head>
 
-<body class="bg-white text-blue-900">
+<body>
+    <div class="grain-overlay"></div>
+    
     <main-navbar></main-navbar>
-    <!-- Products Section -->
-    <section class="py-24 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-10 text-center">Our Products</h2>
-            <!-- Filter Controls -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <select id="brand-filter" class="md:w-48 w-full border px-4 py-2 rounded shadow">
+
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-[var(--soft-white)] via-[var(--light-blue)]/30 to-[var(--warm-white)]"></div>
+        <div class="organic-blob blob-1" style="top: 10%; right: -5%;"></div>
+        <div class="organic-blob blob-2" style="bottom: 10%; left: -10%;"></div>
+        <div class="absolute inset-0 woven-pattern"></div>
+        
+        <div class="relative z-10 text-center px-6 py-20">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 opacity-0-init animate-fade-in-up" style="font-family: 'Cormorant Garamond', serif; color: var(--deep-navy);">
+                Our <span class="text-gradient">Products</span>
+            </h1>
+            <p class="text-lg text-[var(--deep-navy)]/70 max-w-2xl mx-auto opacity-0-init animate-fade-in-up stagger-1">
+                Explore our collection of premium woven garments crafted for global brands.
+                Specializing in children's bottom wear with exceptional quality and attention to detail.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <select id="brand-filter" class="filter-select md:w-56 w-full">
                     <option value="">All Brands</option>
                 </select>
 
-                <select id="type-filter" class="md:w-48 w-full border px-4 py-2 rounded shadow">
+                <select id="type-filter" class="filter-select md:w-56 w-full">
                     <option value="">All Types</option>
                 </select>
             </div>
-            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
+            
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+            
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-[var(--light-blue)] flex items-center justify-center">
+                    <svg class="w-10 h-10 text-[var(--sky-blue)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" style="font-family: 'Cormorant Garamond', serif; color: var(--ocean-blue);">No products found</h3>
+                <p class="text-[var(--deep-navy)]/60">Try adjusting your filters to see more results.</p>
+            </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white text-center py-6">
-        <p>© 2025 Radiant Apparels. All rights reserved.</p>
+
+    <section class="section-padding relative overflow-hidden" style="background: var(--light-blue);">
+        <div class="absolute inset-0 woven-pattern"></div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center">
+            <h2 class="section-title">Need a Custom Order?</h2>
+            <p class="text-lg text-[var(--deep-navy)]/70 mb-8">
+                We specialize in custom manufacturing for global brands. Contact us to discuss your specific requirements.
+            </p>
+            <a href="contact.html" class="btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <footer class="footer py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="https://utfs.io/f/Uc3Q7lILsSz5TzBrFeugRj7zMKGrDqXswBUbnLc6xomdfE1V" alt="Radiant Logo" class="h-10 w-10 object-contain brightness-0 invert" />
+                    <span class="text-lg font-semibold" style="font-family: 'Cormorant Garamond', serif;">Radiant Apparels</span>
+                </div>
+                
+                <div class="flex gap-6 text-sm text-white/70">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="products.html" class="hover:text-white transition-colors">Products</a>
+                    <a href="infra.html" class="hover:text-white transition-colors">Infrastructure</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/50">
+                <p>© 2025 Radiant Apparels Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.opacity-0-init').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
 </body>
+
+</html>
