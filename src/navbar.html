@@ -1,34 +1,37 @@
-<!-- Navbar -->
-<header class="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-90 text-blue-900 shadow-md rounded-b-xl">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <img src="assets/radiant-logo.png" alt="logo" class="object-contain h-10 w-10" />
-            <div class="text-2xl font-bold">
-                Radiant Apparels
+<header class="fixed top-0 left-0 w-full z-[10000] transition-all duration-500" id="main-header">
+    <div class="absolute inset-0 bg-white/85 backdrop-blur-md border-b border-[var(--light-blue)]"></div>
+    <div class="relative max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-[var(--sky-blue)] to-[var(--ocean-blue)] rounded-full blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <img src="https://utfs.io/f/Uc3Q7lILsSz5TzBrFeugRj7zMKGrDqXswBUbnLc6xomdfE1V" alt="Radiant Logo" class="relative h-12 w-12 object-contain" />
             </div>
-        </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-semibold text-[var(--deep-navy)]" style="font-family: 'Cormorant Garamond', serif;">Radiant Apparels</span>
+                <span class="text-xs text-[var(--sky-blue)] tracking-wider uppercase">Since 1994</span>
+            </div>
+        </a>
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex gap-4">
-            <a href="index.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Home</a>
-            <a href="products.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
-            <a href="infra.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
-            <a href="contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
+        <nav class="hidden md:flex items-center gap-1">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="infra.html" class="nav-link">Infrastructure</a>
+            <a href="contact.html" class="btn-primary ml-4 text-sm !py-2.5 !px-5">Get in Touch</a>
         </nav>
 
-        <!-- Hamburger Button -->
-        <button id="menu-toggle" class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <button id="menu-toggle" class="md:hidden relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-[var(--light-blue)] transition-colors duration-300">
+            <svg class="w-6 h-6 text-[var(--deep-navy)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col gap-2">
-        <a href="index.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Home</a>
-        <a href="products.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Products</a>
-        <a href="infra.html" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded">Infrastructure</a>
-        <a href="contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Contact</a>
+    <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-[var(--light-blue)] shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-2">
+            <a href="index.html" class="nav-link block py-3 px-4 rounded-xl hover:bg-[var(--light-blue)] transition-colors">Home</a>
+            <a href="products.html" class="nav-link block py-3 px-4 rounded-xl hover:bg-[var(--light-blue)] transition-colors">Products</a>
+            <a href="infra.html" class="nav-link block py-3 px-4 rounded-xl hover:bg-[var(--light-blue)] transition-colors">Infrastructure</a>
+            <a href="contact.html" class="btn-primary mt-4 text-center">Get in Touch</a>
+        </div>
     </div>
 </header>
